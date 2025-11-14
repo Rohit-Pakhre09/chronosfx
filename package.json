@@ -1,5 +1,5 @@
 {
-    "name": "@rohitpakhre/chronosfx",
+    "name": "chronosfx",
     "version": "1.0.0",
     "description": "Simple and lightweight date & time utility functions.",
     "type": "module",
