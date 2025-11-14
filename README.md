@@ -118,11 +118,23 @@ timeAgo(Date.now() - 3000);
 
 Checks if the input is a valid date.
 
+- **Example:**
+
+  - **Input:** `"2025-02-30"`
+
+  - **Returns:** `false`
+
 ---
 
 ### `formatDate(input)`
 
 Returns `"DD Mon YYYY"`.
+
+- **Example:**
+
+  - **Input:** `"2025-11-20"`
+
+  - **Returns:** `"20 Nov 2025"`
 
 ---
 
@@ -130,11 +142,23 @@ Returns `"DD Mon YYYY"`.
 
 Formats time in **12-hour** or **24-hour** format.
 
+- **Example:**
+
+  - **Input:** `new Date("2025-11-20T14:30:00")`, `{ hour12: true }`
+
+  - **Returns:** `"02:30 PM"`
+
 ---
 
 ### `getCurrentTimestamp()`
 
 Returns the **current timestamp** in milliseconds.
+
+- **Example:**
+
+  - **Input:** (none)
+
+  - **Returns:** `1732085400000` (value will vary)
 
 ---
 
@@ -142,18 +166,35 @@ Returns the **current timestamp** in milliseconds.
 
 Converts any valid date to an **ISO formatted string**.
 
+- **Example:**
+
+  - **Input:** `new Date("2025-11-20T14:30:00Z")`
+
+  - **Returns:** `"2025-11-20T14:30:00.000Z"`
+
 ---
 
 ### `addDays(input, days)`
 
-Adds days and returns a formatted date:  
-`"YYYY-MM-DD"`.
+Adds days and returns a formatted date: `"YYYY-MM-DD"`.
+
+- **Example:**
+
+  - **Input:** `"2025-11-20"`, `10`
+
+  - **Returns:** `"2025-11-30"`
 
 ---
 
 ### `daysBetween(a, b)`
 
 Returns the **number of days** between two dates.
+
+- **Example:**
+
+  - **Input:** `"2025-11-20"`, `"2025-11-30"`
+
+  - **Returns:** `10`
 
 ---
 
@@ -162,8 +203,16 @@ Returns the **number of days** between two dates.
 Returns human-readable relative time such as:
 
 - `"just now"`
+
 - `"5 minutes ago"`
+
 - `"yesterday"`
+
+- **Example:**
+
+  - **Input:** `1731590100000` (a timestamp from 5 minutes ago)
+
+  - **Returns:** `"5 minutes ago"`
 
 ---
 
@@ -202,7 +251,6 @@ chronosfx/
    git commit -m "Add new feature"
    ```
 4. Push and open a PR
-
 
 ## 📝 License
 
